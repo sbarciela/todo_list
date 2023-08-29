@@ -1,13 +1,236 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-size: 14px;
+font-family: 'Montserrat', sans-serif;
+color:#333333;
+margin:0;
+display: flex;
+justify-content: center;
+box-sizing: border-box;
+height: 100vh;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  height: 100vh;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
+
+  width: 320px ;
+}
+
+.flex{
+  display: flex;
+}
+
+
+
+
+h1{
+font-family: 'Raleway', sans-serif;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: -0.045em;
+text-align: center;
+margin-bottom: 58px;
+margin-top: 32px;
+
+}
+
+
+.filter-container{
+ font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.filter-container div{
+  width: 89px;
+}
+
+.filter{
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.rectangle{
+width: 89px;
+height: 4px;
+background: #2F80ED;
+border-radius: 4px 4px 0px 0px;
+
+}
+
+ .line{
+  border: 1px solid #BDBDBD;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 18px;
+ }
+
+.input-form{
+  margin-bottom: 32px;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+ }
+ 
+.input-form input{
+width: 60%;
+height: 56px;
+border-radius: 12px;
+border: 1px solid #BDBDBD;
+
+
+ }
+
+.input-form input::placeholder{
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color:#828282;
+padding-left: 12px;
+
+
+}
+
+.input-form button{
+width: 109px;
+border-radius: 12px;
+background: #2F80ED;
+color:#FFFFFF;
+font-weight: 600;
+border:none
+}
+.input-form button:hover {
+  box-shadow: 4px 2px 6px 0px #7FB1F366;
+}
+
+
+.task{
+  margin-bottom: 27px;
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.task-done{
+  text-decoration: line-through;
+  color: #333333;
+
+}
+
+
+.material-symbols-rounded {
+  cursor: pointer;
+  color: #828282;
+  margin: 0;
+  padding: 0;
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+.checkbox{
+  fill:  #828282;
+  stroke-width:1;
+   stroke:#FFFFFF
+
+}
+.checked{
+fill: #2F80ED;
+}
+
+.deleteButton{
+  
+  border: none;
+  background: none;
+  margin-right: auto;
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+
+.delete-icon{
+  fill:#828282;
+  margin-right: 0;
+  margin-left:auto;
+  font-size: 12px;
+  
+  
+}
+
+.delete-icon-white{
+  fill:#FFFFFF ;
+ font-size: 12px;
+ transform: scale(0.5);
+  
+  
+
+
+}
+
+.deleteAll{
+  background-color: #EB5757;
+  color: #FFFFFF;
+  width: 124px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  margin-left:auto;
+  padding: 0;
+  
+
+}
+
+.footer{
+  text-align: center;
+  color: #A9A9A9;
+  padding-bottom: 24px
+}
+.footer a{
+  color: #A9A9A9;
+}
+
+
+
+@media (min-width:769px){
+  .wrapper{
+    width: 608px;
+  }
+
+  .input-form input{
+    width: 470px;
+  }
 }
