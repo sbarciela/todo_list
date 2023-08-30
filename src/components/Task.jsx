@@ -1,6 +1,7 @@
-import DeleteIcon from '@material-design-icons/svg/outlined/delete_outline.svg';
-import Checkbox from '@material-design-icons/svg/round/check_box_outline_blank.svg';
-import CheckboxFilled from '@material-design-icons/svg/round/check_box.svg';
+import DeleteIcon from "./assets/delete_outline.svg"
+import Checkbox from "./assets/check_box_outline_blank.svg"
+import CheckboxFilled from "./assets/check_box.svg";
+
 
 function Task (props){
 
