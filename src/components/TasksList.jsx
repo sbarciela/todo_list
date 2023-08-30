@@ -1,4 +1,3 @@
-import DeleteIcon from '@material-design-icons/svg/outlined/delete_outline.svg';
 import deleteIcon from "./assets/delete_outline_white.svg?url"
 import Task from "./Task"
 

@@ -10,7 +10,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [activeList, setActiveList]= useState([]);
   const [activeFilter, setActivefilter]=useState("All");
-  const [filteredTodos, setFilteredTodos]=useState(tasks)
+  const [filteredTodos, setFilteredTodos]=useState([])
   
 
 
