@@ -1,4 +1,5 @@
 import DeleteIcon from '@material-design-icons/svg/outlined/delete_outline.svg';
+import deleteIcon from "./assets/delete_outline.svg?url"
 import Task from "./Task"
 
 function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,filteredTodos}){
@@ -20,7 +21,7 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
         {activeFilter==="Completed"&&filteredTodos.length>0?
         <div>
         <button className="deleteAll" onClick={deleteAllHandler}>
-         <DeleteIcon className="delete-icon-white" />
+         <img src={deleteIcon} className="delete-icon-white" alt='delete-icon' />
         delete all</button></div>:null}
    </div>
    )
