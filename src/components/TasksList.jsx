@@ -17,7 +17,7 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
    <div>
      
 
-    {filteredTodos.length>=0?filteredTodos.map((task,i)=>{return <Task 
+    {filteredTodos!==null?filteredTodos.map((task,i)=>{return <Task 
         key={i} 
         index={task.id} 
         name={task.name} 
