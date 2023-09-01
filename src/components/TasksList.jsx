@@ -1,13 +1,23 @@
+import { useEffect } from "react"
 import deleteIcon from "./assets/delete_outline_white.svg?url"
 import Task from "./Task"
 
 function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,filteredTodos}){
-    
+   useEffect(() => {
+     console.log(filteredTodos)
+     
+   }, []);
+   useEffect(() => {
+      console.log(filteredTodos)
+      
+    }, [filteredTodos]);
+   
+
    return(
    <div>
      
 
-    {filteredTodos&&filteredTodos.map((task,i)=>{return <Task 
+    {filteredTodos?filteredTodos.map((task,i)=>{return <Task 
         key={i} 
         index={task.id} 
         name={task.name} 
@@ -15,7 +25,7 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
         deleteTask={deleteTask} 
         updateStateTask={updateStateTask}
         activeFilter={activeFilter}
-        />})}
+        />}):<h2>cargando</h2>}
   
         {activeFilter==="Completed"&&filteredTodos.length>0?
         <div>
