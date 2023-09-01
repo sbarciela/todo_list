@@ -10,7 +10,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [activeList, setActiveList]= useState([]);
   const [activeFilter, setActivefilter]=useState("All");
-  const [filteredTodos, setFilteredTodos]=useState(null)
+  const [filteredTodos, setFilteredTodos]=useState([])
   
 
 
@@ -39,7 +39,8 @@ setFilteredTodos(completed)
 let actives=tasks.filter(task=>task.active===true)
 setFilteredTodos(actives)
 }else if(activeFilter==="All"){
-setFilteredTodos(tasks)
+  let All=tasks
+setFilteredTodos(All)
 } 
 },[activeFilter,tasks, activeList])
 
