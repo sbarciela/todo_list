@@ -11,16 +11,16 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
    }, []);
    useEffect(() => {
       console.log(filteredTodos)
-      console.log(todos)
+    
       
-    }, [filteredTodos, todos]);
+    }, [filteredTodos]);
    
 
    return(
    <div>
      
 
-    {todos.map((task,i)=>{return <Task 
+    {todos?.map((task,i)=>{return <Task 
         key={i} 
         index={task.id} 
         name={task.name} 
