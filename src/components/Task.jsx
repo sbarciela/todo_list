@@ -1,6 +1,3 @@
-import DeleteIcon from "./assets/delete_outline.svg"
-import Checkbox from "./assets/check_box_outline_blank.svg"
-import CheckboxFilled from "./assets/check_box.svg";
 import check from "./assets/check_box_outline_blank.svg?url"
 import checkboxFilled from "./assets/check_box.svg?url";
 import deleteIcon from "./assets/delete_outline.svg?url"
