@@ -23,6 +23,7 @@ useEffect(() => {
     localStorage.setItem("tasks",JSON.stringify([]));
     setTasks([]);
     setFilteredTodos([])
+    window.location.reload()
   }
 
   //pasamos el valor del localStorage al estado del componente
