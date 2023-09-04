@@ -17,7 +17,7 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
    <div>
      
 
-    {filteredTodos!==null?filteredTodos.map((task,i)=>{return <Task 
+    {filteredTodos.map((task,i)=>{return <Task 
         key={i} 
         index={task.id} 
         name={task.name} 
@@ -25,7 +25,7 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
         deleteTask={deleteTask} 
         updateStateTask={updateStateTask}
         activeFilter={activeFilter}
-        />}):<h2>cargando</h2>}
+        />})}
   
         {activeFilter==="Completed"&&filteredTodos.length>0?
         <div>
