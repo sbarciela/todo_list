@@ -3,8 +3,7 @@ import { useEffect } from "react";
 function Filter({showActivesTasks,showAllTasks,showCompletedTasks,activeFilter,name}){
 
     useEffect(() => {
-        console.log(name)
-      console.log(activeFilter)
+        
     
      
     }, [])
