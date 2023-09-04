@@ -42,7 +42,7 @@ setFilteredTodos(actives)
   let All=tasks
 setFilteredTodos(All)
 } 
-},[activeFilter,tasks, activeList])
+},[activeFilter,tasks, activeList,setFilteredTodos])
 
  //metodo para creacion de una nueva tarea
  async function submit(e,taskField) {
