@@ -3,21 +3,24 @@ import deleteIcon from "./assets/delete_outline_white.svg?url"
 import Task from "./Task"
 
 function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,filteredTodos}){
+  let todos=[...filteredTodos]; 
+
    useEffect(() => {
-     console.log(filteredTodos)
+    
      
    }, []);
    useEffect(() => {
       console.log(filteredTodos)
+      console.log(todos)
       
-    }, [filteredTodos]);
+    }, [filteredTodos, todos]);
    
 
    return(
    <div>
      
 
-    {filteredTodos.map((task,i)=>{return <Task 
+    {todos.map((task,i)=>{return <Task 
         key={i} 
         index={task.id} 
         name={task.name} 
