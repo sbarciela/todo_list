@@ -19,11 +19,15 @@ useEffect(() => {
   //consultamos por objeto en local storage, si no existe seteamos clave con array vacio
   let taskList=localStorage.getItem("tasks")
 
+ 
   if(taskList===null){
-    localStorage.setItem("tasks",JSON.stringify([]));
-    setTasks([]);
-    setFilteredTodos([])
-    window.location.reload()
+    let defineTask=async()=>{
+    
+      await localStorage.setItem("tasks",JSON.stringify([]));
+    }
+
+    defineTask()
+      
   }
 
   //pasamos el valor del localStorage al estado del componente
