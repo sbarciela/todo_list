@@ -9,10 +9,10 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
     
      
    }, []);
+
+
    useEffect(() => {
-      console.log(filteredTodos)
-    
-      
+      console.log(filteredTodos)      
     }, [filteredTodos]);
    
 

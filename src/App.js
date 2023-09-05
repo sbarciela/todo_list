@@ -7,33 +7,27 @@ import Footer from "./components/Footer";
 
 function App() {
 
-  const [tasks, setTasks] = useState([]);
+  let taskList=localStorage.getItem("tasks")
+
+  if(taskList===null){
+    localStorage.setItem("tasks",JSON.stringify([]));    
+  }
+
+  //pasamos el valor del localStorage al estado del componente
+  let parseado=JSON.parse(taskList)
+  
+
+  const [tasks, setTasks] = useState(parseado);
   const [activeList, setActiveList]= useState([]);
   const [activeFilter, setActivefilter]=useState("All");
-  const [filteredTodos, setFilteredTodos]=useState([])
+  const [filteredTodos, setFilteredTodos]=useState(parseado)
   
 
 
 useEffect(() => {
    //al montarse el componente...
   //consultamos por objeto en local storage, si no existe seteamos clave con array vacio
-  let taskList=localStorage.getItem("tasks")
-
- 
-  if(taskList===null){
-    let defineTask=async()=>{
-    
-      await localStorage.setItem("tasks",JSON.stringify([]));
-    }
-
-    defineTask()
-      
-  }
-
-  //pasamos el valor del localStorage al estado del componente
-  let parseado=JSON.parse(taskList)
-  setTasks(parseado);
-  setFilteredTodos(parseado)
+  
   
 }, []);
 

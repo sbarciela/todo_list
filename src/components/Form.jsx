@@ -10,7 +10,7 @@ function Form (props){
     return(
         <div>
         <form onSubmit={submit} className="input-form">
-        <input type="text" placeholder="add details" ref={taskField} />
+        <input type="text" placeholder="add details" ref={taskField} name="form-inmput-field" />
         <button>Add</button>
       </form>
         </div>
