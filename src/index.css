@@ -225,7 +225,7 @@ fill: #2F80ED;
 
 @media (min-width:320px)  { /* Vertical Screen Phones */ 
     .wrapper{
-      width: 300px ;
+      width: 100vw ;
     }
 }
 
