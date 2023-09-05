@@ -5,10 +5,6 @@ import Task from "./Task"
 function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,filteredTodos}){
   let todos=[...filteredTodos]; 
 
-   useEffect(() => {
-    
-     
-   }, []);
 
 
    useEffect(() => {
@@ -20,7 +16,7 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
    <div>
      
 
-    {todos?.map((task,i)=>{return <Task 
+    {todos.map((task,i)=>{return <Task 
         key={i} 
         index={task.id} 
         name={task.name} 
