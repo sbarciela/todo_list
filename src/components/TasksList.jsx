@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import deleteIcon from "./assets/delete_outline_white.svg?url"
 import Task from "./Task"
 
@@ -6,11 +5,6 @@ function TasksList ({deleteAllHandler,deleteTask, activeFilter,updateStateTask,f
   let todos=[...filteredTodos]; 
 
 
-
-   useEffect(() => {
-      console.log(filteredTodos)      
-    }, [filteredTodos]);
-   
 
    return(
    <div>
