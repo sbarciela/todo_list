@@ -13,7 +13,7 @@ height: 100vh;
 .container{
   height: 100vh;
   display: flex;
-    flex-wrap: wrap;
+    
     flex-direction: column;
     justify-content: space-between;
     
