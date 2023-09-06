@@ -17,12 +17,14 @@ height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     
+    
 }
 .wrapper{
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
   flex-direction: column;
+  padding: 12px;
   
 }
 
@@ -223,9 +225,6 @@ fill: #2F80ED;
   color: #A9A9A9;
 }
 
-@media (min-width:320px)  { /* Vertical Screen Phones */ 
-    
-}
 
 
 @media (min-width:769px){
@@ -234,6 +233,7 @@ fill: #2F80ED;
   }
   .wrapper{
     width: 608px;
+    padding: 0;
   }
 
   .input-form input{
