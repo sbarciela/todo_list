@@ -227,7 +227,7 @@ fill: #2F80ED;
 
 
 
-@media (min-width:769px){
+@media (min-width:608px){
   .container{
     width: 608px;
   }
